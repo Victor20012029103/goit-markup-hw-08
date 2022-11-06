@@ -1,19 +1,33 @@
 .clients-title {
-    font-size: 36px;
+    
+    font-size: 28px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
+    @include desktop {
+        font-size: 36px;
+        }
 }
 
 .client-item {
     display: flex;
     justify-content: space-around;
     gap: 30px;
-}
+    flex-wrap: wrap;
 
+}
+.client-logo {
+    width: calc((100% - 30px)/2);
+    @include tablet {
+    width: calc((100% - 60px)/3);
+    }
+  @include desktop {
+    width: calc((100% - 150px)/6);
+  }}
+     
 .company-link {
-    width: 170px;
+    width: 100%;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -25,7 +39,10 @@
         &:focus {
             border: 1px solid var(--accentcolor);
         }
-}
+//  
+        
+ }
+
 
 .company-icon {
     fill: #afb1b8;

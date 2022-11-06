@@ -11,10 +11,11 @@
     font-family: "Raleway";
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.16;
+    // line-height: 1.19;
     color: #000000;
-    margin-right: 93px;
-    padding: 24px 0;
+    // margin-right: 93px;
+    // padding: 24px 0;
 }
 
 .header__container {
@@ -23,18 +24,27 @@
 }
 
 .nav {
-    display: flex;
+    display: none;
+    @include tablet {
+width: 720px;
+     display: flex;
     align-items: center;
     margin-right: auto;
+
+    }
+    
 }
 
 .contacts {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    justify-content: center;
+    display: none;
+        @include tablet {
+width: 720px;
+ display: flex;
+ align-items: center;
+gap: 50px;
+justify-content: center;
 }
-
+}
 
 
 .menu {
