@@ -1,0 +1,199 @@
+.backdrop {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+    width: 528px;
+    height: 581px;
+    padding: 40px 39px 40px 41px;
+    background-color: var(--indexcolor);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.modal-btn {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover .model-close-icon,
+.modal-btn:focus .model-close-icon {
+    fill: var(--accentcolor);
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--maincolor);
+    margin-bottom: 12px;
+}
+
+.modal-field {
+    margin-bottom: 10px;
+}
+
+.modal-field-comment {
+    margin-bottom: 20px;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 42px;
+    outline: transparent;
+    cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::placeholder {
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+                &:focus {
+                    border: 1px solid #2196f3;
+                    border-radius: 4px;
+                }
+}
+
+.model-input-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    .modal-input:focus+& {
+            fill: #2196f3;
+        }
+
+}
+
+
+
+
+.modal-label {
+    display: block;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: var(--colorp);
+    margin-bottom: 4px;
+}
+
+.modal-comment {
+    display: block;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding: 12px 16px;
+    outline: transparent;
+    cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &::placeholder {
+            font-size: 12px;
+            line-height: 1.17;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+                &:focus {
+                    border: 1px solid #2196f3;
+                    border-radius: 4px;
+                }
+}
+
+
+.input-wrap {
+    position: relative;
+}
+
+.model-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+}
+
+.checktext {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--colorp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    span {
+            width: 16px;
+            height: 15px;
+        }
+}
+
+
+
+.check-icon {
+    display: block;
+
+}
+
+.input-checkbox:checked+.checktext span {
+    fill: var(--accentcolor);
+    width: 16px;
+    height: 15px;
+    background-image: url(../img/icon-check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pravicy-link {
+    color: rgba(33, 150, 243, 1);
+    position: relative;
+    &::after {
+            left: 0;
+            bottom: 5px;
+            content: "";
+            position: absolute;
+            width: 100%;
+            border: 0.5px solid rgba(33, 150, 243, 1);
+            ;
+        }
+}
+
+
+
+.modal-checkbox {
+    margin-bottom: 30px;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}

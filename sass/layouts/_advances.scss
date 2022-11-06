@@ -1,0 +1,35 @@
+.advances-list {
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.advances-item {
+    /* padding-top: 25px; */
+    width: 270px;
+    height: 248px;
+}
+
+.advances-container {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--btncolor);
+    margin-bottom: 30px;
+}
+
+.advances-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.advances-text {
+    width: 270px;
+    height: 72px;
+    line-height: 1.71;
+    color: var(--colorp);
+}

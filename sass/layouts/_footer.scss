@@ -1,0 +1,102 @@
+.footer {
+    background-color: #2f303a;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #ffffff;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.adress-list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.adress-item {
+    line-height: 1.71;
+    color: var(--indexcolor);
+    display: block;
+}
+
+.adress {
+    display: flex;
+}
+
+.footer-soc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--indexcolor);
+    margin-bottom: 20px;
+}
+
+.team-footer-link {
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-team-icon {
+    fill: var(--indexcolor);
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.footer-adress-container {
+    margin-right: 70px;
+}
+
+.footer-soc-container {
+    margin-right: 93px;
+}
+
+.form-text {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--indexcolor);
+    margin-bottom: 20px;
+}
+
+.email-input {
+    color: var(--indexcolor);
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    padding-left: 16px;
+    &::placeholder {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            padding-left: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
+.email {
+    display: flex;
+}
+
+
+
+.email-btn {
+    display: flex;
+    gap: 10px;
+}
+
