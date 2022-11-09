@@ -139,30 +139,45 @@
           <h2 class="about__title">Чим ми займаемося</h2>
           <ul class="picture picture__list">
             <li class="picture__item">
+              <picture>
+                <source srcset="
+              ./img/img1.jpg 1x,
+              ./img/img1-2x.jpg 2x "
+              media="(min-width: 1200px)" />
               <img
                 src="./img/img1.jpg"
                 alt="стіл планшет"
                 width="370"
-                height="294"
               />
+              </picture>
               <p class="picture__text">Десктопні додатки</p>
             </li>
             <li class="picture__item">
+               <picture>
+                <source srcset="
+              ./img/img2.jpg 1x,
+              ./img/img2-2x.jpg 2x "
+              media="(min-width: 1200px)" />
               <img
                 src="./img/img2.jpg"
                 alt="рука телефон ноутбук"
                 width="370"
-                height="294"
               />
+              </picture>
               <p class="picture__text">Мобільні додатки</p>
             </li>
             <li class="picture__item">
+              <picture>
+                <source srcset="
+              ./img/img3.jpg 1x,
+              ./img/img3-2x.jpg 2x "
+              media="(min-width: 1200px)" />
               <img
                 src="./img/img3.jpg"
                 alt="рука планшет"
                 width="370"
-                height="294"
               />
+              </picture>
               <p class="picture__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -173,13 +188,28 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-container">
             <li class="team-item">
-              <img
+              <picture>
+              <source
+              srcset="
+              ./img/people1-mob.jpg 1x,
+              ./img/people1-mob2x.jpg 2x "
+              media="(max-width: 767px)" />
+              <source 
+              srcset="
+              ./img/people1-tab.jpg 1x,
+              ./img/people1-tab2x.jpg 2x
+              media= "( min-width: 768px )" 
+              />
+              <source srcset="
+              ./img/people1.jpg 1x,
+              ./img/people1-2x.jpg 2x "
+              media="(min-width: 1200px)" />
+                <img
                 class="team-foto"
                 src="./img/people1.jpg"
                 alt="головний дизайнер"
-                width="270"
-                height="260"
-              />
+                width="450"/>
+              </picture>
               <h3 class="team-title">Ігор Дем'яненко</h3>
               <p class="team-position">Product Designer</p>
               <ul class="team-soc-list">
@@ -214,13 +244,28 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
+                <picture>
+              <source
+              srcset="
+              ./img/people2-mob.jpg 1x,
+              ./img/people2-mob2x.jpg 2x "
+              media="(max-width: 767px)" />
+              <source 
+              srcset="
+              ./img/people2-tab.jpg 1x,
+              ./img/people2-tab2x.jpg 2x
+              media= "( min-width: 768px )" 
+              />
+              <source srcset="
+              ./img/people2.jpg 1x,
+              ./img/people2-2x.jpg 2x "
+              media="(min-width: 1200px)" />
+                <img
                 class="team-foto"
                 src="./img/people2.jpg"
                 alt="розробник"
-                width="270"
-                height="260"
-              />
+                width="450"/>
+              </picture>
               <h3 class="team-title">Ольга Рєпіна</h3>
               <p class="team-position">Frontend Developer</p>
               <ul class="team-soc-list">
@@ -255,13 +300,28 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
+                <picture>
+              <source
+              srcset="
+              ./img/people3-mob.jpg 1x,
+              ./img/people3-mob2x.jpg 2x "
+              media="(max-width: 767px)" />
+              <source 
+              srcset="
+              ./img/people3-tab.jpg 1x,
+              ./img/people3-tab2x.jpg 2x
+              media= "( min-width: 768px )" 
+              />
+              <source srcset="
+              ./img/people3.jpg 1x,
+              ./img/people3-2x.jpg 2x "
+              media="(min-width: 1200px)" />
+                <img
                 class="team-foto"
                 src="./img/people3.jpg"
                 alt="маркетолог"
-                width="270"
-                height="260"
-              />
+                width="450"/>
+              </picture>
               <h3 class="team-title">Микола Тарасов</h3>
               <p class="team-position">Marketing</p>
               <ul class="team-soc-list">
@@ -296,13 +356,28 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
+              <picture>
+              <source
+              srcset="
+              ./img/people4-mob.jpg 1x,
+              ./img/people4-mob2x.jpg 2x "
+              media="(max-width: 767px)" />
+              <source 
+              srcset="
+              ./img/people4-tab.jpg 1x,
+              ./img/people4-tab2x.jpg 2x
+              media= "( min-width: 768px )" 
+              />
+              <source srcset="
+              ./img/people4.jpg 1x,
+              ./img/people4-2x.jpg 2x "
+              media="(min-width: 1200px)" />
+                <img
                 class="team-foto"
                 src="./img/people4.jpg"
                 alt="дизайнер"
-                width="270"
-                height="260"
-              />
+                width="450"/>
+              </picture>
               <h3 class="team-title">Михайло Єрмаков</h3>
               <p class="team-position">UI Designer</p>
               <ul class="team-soc-list">
@@ -538,7 +613,7 @@
               <a class="pravicy-link" href="">Умови договору</a>
             </label>
           </div>
-          <button type="submit" class="hero__btn">Відправити</button>
+          <button type="submit" class="hero__btn modal-btn-footer" >Відправити</button>
         </form>
       </div>
     </div>
@@ -563,8 +638,8 @@
             <li class="menu__item">
               <a class="menu__link header__link" href="">Контакти</a>
             </li>
-          </ul>
-          <div class="modal-menu-footer">
+      </ul>
+      <div class="modal-menu-footer">
             <ul class="contacts">
               <li class="contact">
               <a

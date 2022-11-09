@@ -22,9 +22,7 @@
     height: 100%;
 }
 .modal-mobil-btn {
-    position: absolute;
-    right: 15px;
-    top: 10px;
+
     background: transparent;
     min-width: 40px;
         min-height: 40px;
@@ -39,6 +37,15 @@
             &:focus {
               fill: var(--accentcolor);
 }
+@include tablet {
+    display: none;
+
+}
+
+@include desktop {
+    display: none;
+}
+
 }
 .mob-soc-item {
     font-weight: 500;
@@ -53,7 +60,23 @@
     display: flex;
     gap: 20px;
 }
-.mob-soc-item::before {
-    position: absolute;
-border: 1px solid rgba(33, 33, 33, 0.2);
+.mob-soc-item:not(:first-child):before {
+        content: '';
+        height: 22px;
+        position: absolute;
+        border: 1px solid rgba(33, 33, 33, .2);
+        left: -10px;}
+
+.modal-menu-footer {
+    flex-direction: column;
+    display: flex;
+    gap: 64px ;
+}
+.mobile-list {
+  width: 100%;
+ height: 100%;
+ display: flex;
+  justify-content: space-between;
+     flex-direction: column;
+        
 }

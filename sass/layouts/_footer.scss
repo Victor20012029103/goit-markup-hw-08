@@ -52,12 +52,15 @@
     flex-direction: column;
     gap: 8px;
     align-items: center;
+    @include desktop {
+        align-items: flex-start;
+        }
+
 }
 
 .adress-item {
     line-height: 1.71;
     color: var(--indexcolor);
-    display: block;
 }
 
 .adress {

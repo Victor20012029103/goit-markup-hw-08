@@ -89,7 +89,8 @@ width: 100%;
 }
 
 .header__link {
-    padding: 32px 0;
+
+    padding: 0;
     position: relative;
     font-weight: 500;
     line-height: 1.14;
@@ -101,7 +102,7 @@ width: 100%;
         color: var(--accentcolor);
     }
         @include tablet {
-            padding: 32px 0;
+            padding: 34px 0;
 }
  @include desktop {
     padding: 30px 0;
@@ -159,6 +160,7 @@ width: 100%;
 @include tablet {
         font-size: 12px;
         padding:  0;
+        color: var(--colorp);
     }
     &:hover,
     &:focus {
@@ -172,6 +174,11 @@ width: 100%;
 }
 
 .contacts {
+    flex-direction: column;
+    display: flex;
+        gap: 32px;
+    
+  
 
     @include tablet {
         display: flex;
