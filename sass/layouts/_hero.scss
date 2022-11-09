@@ -10,14 +10,14 @@
                 margin: 0 auto;
                 max-width: 480px;
                 @include retina {
-                    background-image: var(--gradient-hero) , url(/img/hero-bg-mob2x.jpg);
+                    background-image: var(--gradient-hero) , url(../img/hero-bg-mob2x.jpg);
                 }
                 @include tablet {
                         max-width: 768px;
-                        background-image: var(--gradient-hero), url(/img/hero-tablet.jpg);
+                        background-image: var(--gradient-hero), url(../img/hero-tablet.jpg);
                  padding: 118px 0; 
                 @include retina {
-                        background-image: var(--gradient-hero), url(/img/hero-bg-tab2x.jpg);
+                        background-image: var(--gradient-hero), url(../img/hero-bg-tab2x.jpg);
                     }
                     }
                @include desktop {
