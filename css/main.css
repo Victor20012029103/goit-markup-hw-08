@@ -467,10 +467,15 @@ body {
 
 .mob-soc-item:not(:first-child):before {
   content: "";
-  height: 22px;
+  height: 15px;
   position: absolute;
   border: 1px solid rgba(33, 33, 33, 0.2);
   left: -10px;
+}
+@media screen and (min-width: 480px) {
+  .mob-soc-item:not(:first-child):before {
+    height: 22px;
+  }
 }
 
 .modal-menu-footer {
