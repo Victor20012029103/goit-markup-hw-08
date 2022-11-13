@@ -114,16 +114,24 @@ width: 100%;
 .current {
     color: var(--accentcolor);
 
-    &::after {
-        position: absolute;
-        content: "";
-        left: 0;
-        bottom: -3px;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--accentcolor);
-    }
+    
+        @include tablet {
+            &::after {
+                    position: absolute;
+                    content: "";
+                    left: 0;
+                    bottom: -3px;
+                    width: 100%;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: var(--accentcolor);
+                }
+    
+        }
+
+    
+
+    
 }
 
 .connect {
@@ -152,16 +160,25 @@ width: 100%;
 }
 
 .contact__link {
-    font-size: 34px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
+    font-size: 24px;
     color: var(--accentcolor);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include mobile {
+        font-size: 34px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+            
+        
+        }
 @include tablet {
         font-size: 12px;
         padding:  0;
         color: var(--colorp);
     }
+@include desktop {
+        font-size: 14px;
+        }
     &:hover,
     &:focus {
         color: var(--accentcolor);
@@ -208,3 +225,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: currentColor;
     margin-right: 10px;
 }
+
+.contacts-link {
+    color: rgba(255, 255, 255, 1);
+} 

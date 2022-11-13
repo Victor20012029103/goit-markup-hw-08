@@ -21,8 +21,7 @@
     @include tablet {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 76px;
+    justify-content: space-around;
       }
     @include desktop {
         padding: 0;
@@ -60,7 +59,7 @@
 
 .adress-item {
     line-height: 1.71;
-    color: var(--indexcolor);
+    // color: rgba(255, 255, 255, 1);
 }
 
 .adress {
@@ -76,6 +75,9 @@
     color: var(--indexcolor);
     margin-bottom: 20px;
     text-align: center;
+    @include desktop {
+            text-align: start;
+        }
 }
 
 .team-footer-link {
@@ -95,6 +97,11 @@
     align-items: center;
     @include tablet { 
             margin-bottom: 0;}
+ @include desktop {
+ align-items: flex-start;
+                        }
+
+                        
 
     // margin-right: 70px;
 }
