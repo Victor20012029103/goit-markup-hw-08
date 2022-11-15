@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container">
         <nav class="nav">
           <a class="logo header__logo" href="./index.html"
@@ -55,14 +55,14 @@
         </ul>
       </div>
       </div>
-    </header>
+    </header> -->
     <main>
-      <section class="section">
+      <!-- <section class="section">
        <div class="container">
           <h1 class="visually-hidden">Фільтри</h1>
           <ul class="filter-btn-list">
             <li class="filter-btn-item">
-              <button class="filter-btn" type="button">Усі</button>
+              <button class="filter-btn  filter-btn-all" type="button">Усі</button>
             </li>
             <li class="filter-btn-item">
               <button class="filter-btn" type="button">Веб-сайти</button>
@@ -76,17 +76,33 @@
             <li class="filter-btn-item">
               <button class="filter-btn" type="button">Маркетинг</button>
             </li>
-          </ul>
+          </ul> -->
           <ul class="portfolio-list">
             <li>
               <a class="portfolio-item" href="">
               <div class="portfolio-item-wrap">  
-                <img
+             <picture>
+              <source
+              srcset="
+              ./img/imgp1-mob.jpg 1x,
+              ./img/imgp1-mob2x.jpg 2x "
+              media="(max-width: 767px)" />
+              <source 
+              srcset="
+              ./img/imgp1-tab.jpg 1x,
+              ./img/imgp1-tab2x.jpg 2x
+              media="(min-width: 768px)"/>
+              <source srcset="
+              ./img/imgp1.jpg 1x,
+              ./img/imgp1-2x.jpg 2x "
+              media="(min-width: 1200px)" />
+               <img
                 src="./img/imgp1.jpg"
                 alt="ноутбук з людьми"
-                width="370"
-                height="294"
+                width="450"
               />
+              </picture>
+            
              <p class="portfolio-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
             </div>
             <div class="container-portfolio-description">
@@ -234,7 +250,7 @@
        </div>
       </section>
     </main>
- <footer class="footer">
+ <!-- <footer class="footer">
       <div class="container footer-container">
        <div class="footer-adress-container"> 
         <a class="footer-logo" href="./index.html"
@@ -308,6 +324,6 @@
             </form>
           </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

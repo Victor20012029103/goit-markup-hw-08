@@ -4,11 +4,18 @@
 }
 
 .filter-btn-list {
+    max-width: 340px;
     display: flex;
+    flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 50px;
-    justify-content: center;
+    margin-bottom: 40px;
+    justify-content: start;
+
+    // margin-bottom: 50px;
+    // justify-content: center;
+    // justify-content: center;
 }
+
 
 .filter-btn {
     font-family: inherit;
@@ -45,7 +52,7 @@
 }
 
 .portfolio-item {
-    width: 370px;
+    width: 450px;
     border: 1px solid #eeeeee;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
@@ -80,8 +87,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    /* margin-bottom: 94px; */
-    width: calc(100% - 60px) / 3;
+    // width: calc(100% - 60px) / 3;
 }
 
 .portfolio-item-wrap {
